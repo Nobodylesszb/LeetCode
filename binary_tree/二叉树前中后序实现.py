@@ -103,10 +103,11 @@ b = root.insert_right('B')
 c = a.insert_left('C')
 d = a.insert_right('D')
 e = b.insert_left('E')
+f = b.insert_right('F')
 
 M = OrderMethod()
 
-# print(M.pre_order(root))
+print(M.pre_order(root))
 """
 output:
 R
@@ -142,7 +143,7 @@ R
 None
 
 """
-print(M.lookup(root))
+# print(M.lookup(root))
 """
 output
 R
@@ -154,11 +155,11 @@ E
 None
 """
 
-L = [4,3,6,13,61,38,22,41]
-new_Root= Btree(L[0])        # 创建根节点
-for i in range(1,len(L)):
-    M.insert(new_Root,L[i])
-print(M.middle_order(new_Root))
+# L = [4,3,6,13,61,38,22,41]
+# new_Root= Btree(L[0])        # 创建根节点
+# for i in range(1,len(L)):
+#     M.insert(new_Root,L[i])
+# print(M.middle_order(new_Root))
 
 """
 output:

@@ -1,0 +1,1 @@
+print(M.pre_order(root))
