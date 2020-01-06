@@ -20,3 +20,12 @@ class Solution:
         ans.left = self.mergeTrees(t1 and t1.left, t2 and t2.left)
         ans.right = self.mergeTrees(t1 and t1.right, t2 and t2.right)
         return ans
+
+
+if __name__ == "__main__":
+    root = TreeNode(0)
+    root.left = TreeNode(1)
+    root.right = TreeNode(2)
+    root.left.left = TreeNode(3)
+    root.right.right = TreeNode(5)
+    print(len([root]))
