@@ -22,3 +22,17 @@ class Solution(object):
         
 # @lc code=end
 
+## 
+# import sys
+
+# class Solution:
+#     def maxSubArray(self,nums):
+#         n = len(nums)
+#         maxSum = - sys.maxsize
+#         sum = 0
+#         for i in range(n):
+#             sum = 0
+#             for j in range(i,n):
+#                 sum += nums[j]
+#                 maxSum = max(maxSum,sum)
+#         return maxSum
